@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <button id="startButton" type="button" onClick="start()">Start!</button>
+
+        <br><br>
+
+        <label for="speed-select">Speed:</label>
+        <select name="speeds" id="speed-select">
+            <option value="slow">Slow</option>
+            <option value="medium" selected>Medium</option>
+            <option value="fast">Fast</option>
+        </select>
+
+        <br><br>
+
+        <label for="gridSize">Grid size:</label>
+        <input id="gridSize" type="number" min="5" max="25" value="10">
+
+        <h3 id="scoreLabel">Score: 0</h3>
+
+        <canvas id="grid" width="250" height="250"></canvas>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
